@@ -1,0 +1,31 @@
+$color-primary: #00072D;
+$color-secondary: #001C55;
+$color-tertiary: #0E6BA8;
+$color-font: #fff;
+
+$font-primary: 'Open Sans', sans-serif;
+
+$bp-largest: 75em;  // 1200px
+$bp-large: 56.25em; // 900px
+$bp-medium: 50em;   // 800px
+$bp-small: 25em;   // 400px
+
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+

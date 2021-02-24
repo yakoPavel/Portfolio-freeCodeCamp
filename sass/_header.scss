@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba($color-secondary, .5);
+  color: $color-font;
+  font-size: 2rem;
+  z-index: 5;
+
+  position: fixed;
+  width: 100%;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    margin-right: 2rem;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 2rem 4rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 2rem 2rem;
+    }
+
+    &:hover {
+      background-color: $color-tertiary;
+    }
+  }
+}
